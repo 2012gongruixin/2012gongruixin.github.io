@@ -543,7 +543,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -581,7 +581,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -614,16 +614,13 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            OJ模拟赛：：超氧化钾给定两个整数x和y，计算z的值，其中z定义为：
+                            OJ模拟赛：T1：艰难的选择(非常男女计划)题目大意从一排按身高排序的人中，选取最长的连续子序列，要求子序列中男女人数相等。
+解题思路将男生记为 ，女生记为 ，问题转化为寻找最长的连续子数组，其和为 （即男女人数相等）。前缀和+哈希表：
 
-即z是x对从1到y的每一个整数取模后的结果之和。直接暴力计算对于y很大的情况（如y=10^9）会超时，因此需要数学优化。注意到：
-因此：
-问题转化为计算：优化方法：数论分块
-利用数论分块（整除分块）的技巧来优化计算：
+计算前缀和数组，用哈希表记录每个前缀和首次出现的位置。
+遍历时，若当前前缀和已存在于哈希表，则两者之间的子数组和为0，更新最大长度。
 
-对于相同的  值， 的范围是连续的
-可以一次性计算这些连续k的贡献   
-时间复杂度从O(y)优化到O...
+时间复杂度：O(n...
                         
                     </div>
 
@@ -675,7 +672,7 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            炸的最惨的一次OJ模拟赛：：超氧化钾给定两个整数x和y，计算z的值，其中z定义为：
+                            炸的最惨的一次OJ模拟赛：T1：超氧化钾给定两个整数x和y，计算z的值，其中z定义为：
 
 即z是x对从1到y的每一个整数取模后的结果之和。直接暴力计算对于y很大的情况（如y=10^9）会超时，因此需要数学优化。注意到：
 因此：
@@ -684,7 +681,7 @@ mjx-container[display="true"] + br {
 
 对于相同的  值， 的范围是连续的
 可以一次性计算这些连续k的贡献   
-时间复杂度从O...
+时间复杂度...
                         
                     </div>
 
@@ -728,6 +725,130 @@ mjx-container[display="true"] + br {
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2025/01/21/2025-1-21-%E5%91%A8%E4%BA%8C-OJ%E6%A8%A1%E6%8B%9F%E8%B5%9B/">
+                            2025.1.21 周二 OJ模拟赛
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            OJ模拟赛：T1：儒略日题目大意给定儒略日 ，计算其对应的公历日期。需处理三种历法规则：
+
+格里高利历（1582-10-15及之后）：闰年判断更复杂。
+删除日期（1582-10-5至1582-10-14）：这些日期不存在。
+儒略历（1582-10-4及之前）：每4年一闰。
+
+解题思路
+分段处理：
+
+儒略历阶段（）：直接按4年一闰计算。
+格里高利历阶段（）：跳过删除日期后，按格里高利闰年规则计...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Jan 21 2025 17:03:14 GMT+0800">
+                
+                    2025-01-21
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2025/01/21/2025-1-21-%E5%91%A8%E4%BA%8C-OJ%E6%A8%A1%E6%8B%9F%E8%B5%9B/">阅读全文<span class="seo-reader-text">2025.1.21 周二 OJ模拟赛</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2025/01/20/2025-1-20-%E5%91%A8%E4%B8%80-OJ%E6%A8%A1%E6%8B%9F%E8%B5%9B/">
+                            2025.1.20 周一 OJ模拟赛
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            OJ模拟赛：T1：括号树题目大意给定一棵  个节点的树，每个节点有一个括号’(‘或’)’。定义  为根到节点  路径上的括号组成的字符串。对每个  ，求  中不同位置的合法括号子串数量 ，并输出所有  的异或和。
+解题思路
+问题分解：
+
+合法括号子串：需满足括号匹配且任意前缀非负（经典栈模型）。
+去重：子串位置不同即视为不同，无需去重相同形态的子串。
+
+
+关键观察：
+
+对每个，动态维护一个栈...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jan 20 2025 14:53:24 GMT+0800">
+                
+                    2025-01-20
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2025/01/20/2025-1-20-%E5%91%A8%E4%B8%80-OJ%E6%A8%A1%E6%8B%9F%E8%B5%9B/">阅读全文<span class="seo-reader-text">2025.1.20 周一 OJ模拟赛</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2025/01/17/2025-1-17-%E5%91%A8%E4%BA%94-OJ%E6%A8%A1%E6%8B%9F%E8%B5%9B/">
                             2025.1.17 周五 OJ模拟赛
                         </a>
@@ -736,7 +857,8 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            OJ模拟赛：：旅行给定一个无向连通图，求其字典序最小的  序列（每次优先访问编号最小的未访问邻点）。可以贪心DFS：从编号最小的节点（号）开始，每次优先访问未访问过的最小邻接点。赛时建树打挂了，不然有  分。预估/得分：4/50：赛道修建给定一棵具有  个节点的树，每条边有长度 。需要选择  条互不重叠的路径（赛道），使得这些路径中最短路径的长度尽可能大。可以二分答案和贪心验证，但赛时没写出...
+                            OJ模拟赛：T1：旅行给定一个无向连通图，求其字典序最小的  序列（每次优先访问编号最小的未访问邻点）。可以贪心DFS：从编号最小的节点（号）开始，每次优先访问未访问过的最小邻接点。赛时建树打挂了，不然有  分。预估/得分：4/50  
+T2：赛道修建给定一棵具有  个节点的树，每条边有长度 。需要选择  条互不重叠的路径（赛道），使得这些路径中最短路径的长度尽可能大。可以二分答案和贪心验证...
                         
                     </div>
 
@@ -788,7 +910,7 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            OJ模拟赛：：货币系统给定一个货币系统，其中包含n种不同面额的货币，每种货币有无穷多张。目标是找到一个新的货币系统，这个新的货币系统与原系统等价（即能表示出所有非负整数金额），同时新系统中的货币种类数尽可能少。两个货币系统等价的条件是：对于任意非负整数 ，它要么在两个系统中都能被表示出来，要么都不能被表示出来。要求找到最小的 ，使得存在一个货币系统 ，满足上述条件。赛时打了暴力，最后TLE了...
+                            OJ模拟赛：T1：货币系统给定一个货币系统，其中包含n种不同面额的货币，每种货币有无穷多张。目标是找到一个新的货币系统，这个新的货币系统与原系统等价（即能表示出所有非负整数金额），同时新系统中的货币种类数尽可能少。两个货币系统等价的条件是：对于任意非负整数 ，它要么在两个系统中都能被表示出来，要么都不能被表示出来。要求找到最小的 ，使得存在一个货币系统 ，满足上述条件。赛时打了暴力，最后TL...
                         
                     </div>
 
@@ -840,7 +962,8 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            OJ模拟赛：：奶酪题目大意是有两条线段，互不相交，之间的距离为  。线段之间有  个圆，半径都为 ，当两个圆相交或相切时，即可连接这两圆。求是否有路径从一条线段到达另一条线段。赛时很快就想出来用并查集，统计碰到两条线段的点，遍历求解。预估/得分：100/100：时间复杂度这是一道大模拟，题目很长，就不在此过多赘述。赛时最先做的是这题，本来挺有把握的，结果还是 WA。预估/得分：10/100：...
+                            OJ模拟赛：T1：奶酪题目大意是有两条线段，互不相交，之间的距离为  。线段之间有  个圆，半径都为 ，当两个圆相交或相切时，即可连接这两圆。求是否有路径从一条线段到达另一条线段。赛时很快就想出来用并查集，统计碰到两条线段的点，遍历求解。预估/得分：100/100  
+T2：时间复杂度这是一道大模拟，题目很长，就不在此过多赘述。赛时最先做的是这题，本来挺有把握的，结果还是 WA。预估/得分：...
                         
                     </div>
 
@@ -892,7 +1015,8 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            OJ模拟赛:：组合数问题给定 n，m，k，求C（i，j）(i&lt;=n,j&lt;=min(i,m))有多少是k的倍数。开始就想到了用杨辉三角预处理组合数，加上前缀和优化，时间复杂度是,但用的是 int ，后面发现不对，好像要用  来存，发现好像还是会炸掉，忽然想到 ，就AC了。预估/得分：100/100：换教室正解是 期望，赛时没想出来，没有理解它的期望是怎么算的，暴力也没打，就没花太多...
+                            OJ模拟赛:T1：组合数问题给定 n，m，k，求C（i，j）(i&lt;=n,j&lt;=min(i,m))有多少是k的倍数。开始就想到了用杨辉三角预处理组合数，加上前缀和优化，时间复杂度是,但用的是 int ，后面发现不对，好像要用  来存，发现好像还是会炸掉，忽然想到 ，就AC了。预估/得分：100/100  
+T2：换教室正解是 期望，赛时没想出来，没有理解它的期望是怎么算的，暴力也没...
                         
                     </div>
 
@@ -944,7 +1068,9 @@ mjx-container[display="true"] + br {
                     <div class="home-article-content markdown-body">
                         
                             
-                            OJ模拟赛：：寻找道路一道很简单的题，有一点考验思路,大意是找一条最短路，使得路径上的每个点的出边指向的点，都可以到达终点，思路我一开始就想出来了，但实现时敲了很久。预估/得分：100/100：联合权值一到有点难的题，大意是给你一棵树，让你求所有相距2的节点的权值的积之和MOD 10007。刚开始想着n^2暴力，后来优化成O(nm)。预估/得分：60/70：飞扬的小鸟很难的dp,我都没看出是...
+                            OJ模拟赛：T1：寻找道路一道很简单的题，有一点考验思路,大意是找一条最短路，使得路径上的每个点的出边指向的点，都可以到达终点，思路我一开始就想出来了，但实现时敲了很久。预估/得分：100/100  
+T2：联合权值一到有点难的题，大意是给你一棵树，让你求所有相距2的节点的权值的积之和MOD 10007。刚开始想着n^2暴力，后来优化成O(nm)。预估/得分：60/70  
+T3：飞扬的小鸟...
                         
                     </div>
 
@@ -1009,7 +1135,7 @@ mjx-container[display="true"] + br {
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 7 篇文章
+                        共撰写了 9 篇文章
                     </span>
                     
                 </p>
